@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — ShoesEveryWhere</title>
+  <link rel="shortcut icon" href="./assets/icon_ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <div class="brand-title"><a href="/index.html">ShoesEveryWhere</a></div>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav class="nav" id="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/about.html" class="active">About</a>
+        <a id="link-login" href="/login.html">Login</a>
+        <a id="link-register" href="/register.html">Register</a>
+        <a href="/orders.html">My Orders</a>
+        <a href="/cart.html">Cart</a>
+        <a id="link-logout" href="#" class="hidden">Logout</a>
+        <a id="link-admin" href="/admin.html" class="hidden">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:36px;padding-bottom:60px;">
+
+    <div class="about-hero">
+      <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dark);font-weight:700;margin-bottom:14px;position:relative;">Our Story</p>
+      <h1>World of Shoes</h1>
+      <p>
+        We believe shoes are more than just fashion — they define your personality, confidence, and comfort.
+        Our mission is to deliver high-quality, stylish, and affordable footwear for every step of your journey.
+      </p>
+      <a href="/index.html" class="btn btn-primary" style="margin-top:28px;position:relative;">Explore Collection →</a>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-card-icon">👟</div>
+        <h3>Curated Collection</h3>
+        <p>From trendy sneakers and running shoes to elegant formals and daily comfort sandals — curated for all age groups and occasions.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🎨</div>
+        <h3>Custom Designs</h3>
+        <p>Express yourself with customized designs. Choose colors, patterns, and materials that match your personality.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">💎</div>
+        <h3>Quality First</h3>
+        <p>Premium materials and strict quality checks ensure maximum durability, breathability, and long-lasting comfort.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🚚</div>
+        <h3>Fast & Secure Delivery</h3>
+        <p>Quick shipping and secure packaging — your favorite shoes reach you safely and on time, every single time.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">📈</div>
+        <h3>Transparent Pricing</h3>
+        <p>No hidden charges. Just fair pricing, seasonal discounts, and the best value for your money.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">⭐</div>
+        <h3>Customer Satisfaction</h3>
+        <p>Easy returns, responsive support, and a seamless shopping experience — your happiness is our priority.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="footer-note">© 2025 ShoesEveryWhere · Premium Footwear</div>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+  <script type="module" src="/js/ui-init.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <h2>Enter OTP</h2>
+  <p>OTP sent to: <strong id="otp-email"></strong></p>
+
+  <div id="error" style="color:red;"></div>
+
+  <form id="otp-form">
+    <input id="otp" type="text" placeholder="Enter OTP" required />
+    <button type="submit">Verify</button>
+  </form>
+
+  <script type="module" src="/js/verify-otp.js"></script>
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify OTP</title>
+
+  <!-- Your Main CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="verify-otp-page">
+
+    <div class="verify-card">
+
+      <h2 class="verify-title">Verify OTP</h2>
+
+      <p class="verify-subtitle">
+        OTP sent to:
+        <span class="verify-email" id="otp-email">example@gmail.com</span>
+      </p>
+
+      <!-- Error Message -->
+      <div id="error" class="otp-error"></div>
+
+      <!-- OTP Form -->
+      <form id="otp-form" class="otp-form">
+
+        <input
+          id="otp"
+          class="otp-input"
+          type="text"
+          maxlength="6"
+          placeholder="Enter OTP"
+          required
+        />
+
+        <button type="submit" class="otp-btn">
+          Verify OTP
+        </button>
+
+      </form>
+
+      <!-- Resend -->
+      <div class="resend-link">
+        Didn't receive code?
+        <a href="#">Resend OTP</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="/js/verify-otp.js"></script>
+
+</body>
+</html>

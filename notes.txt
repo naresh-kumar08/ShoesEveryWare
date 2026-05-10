@@ -1,0 +1,10 @@
+Admin_email:- seervinaresh620@gmail.com
+Admin_pasd:- naresh
+
+customer:-
+
+sirvinaresh008@gmail.com
+123456
+
+naresh.24bcan0358@jecrcu.edu.in
+naresh
